@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<!--
+    * Este projeto foi criado em 21 de janeiro de 2021 com intuito de treinar conhecimentos
+    em HTML, CSS, JavaScript e Bootstrap 4.
+
+    * Criado por Bruno Costa.
+
+-->
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <title>Calculadora JavaScript</title>
+        <meta http-equiv="X-UA-Compatible" content="IE-edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="_css/estilo.css" rel="stylesheet">
+    </head>
+    <body>
+        <div class="container">    
+            <div class="row linha1">
+                <h1>Calculadora JavaScript</h1>
+            </div>
+            <div class="main col-sm-6 col-sm-offset-3">
+                <form action="#">
+                    <!-- Linha para dar espaço entre a borda da página e o container-->
+                    <div class="row linha2">
+
+                    </div>
+
+                    <!-- Inputs dos números-->
+                    <div class="form-group">
+                        <input type="number" placeholder="insira um número" name="num1" id="num1">
+                        <input type="number" name="num2" id="num2" placeholder="insira um número">
+                    </div>
+                    <!-- Botões de Cálculo-->
+                    <div class="form-group">
+                        <input onclick="op(1)" class="btn btn-primary" type="button" value="Somar" name="btn-soma" id="btn-soma">             
+                        <input onclick="op(2)" class="btn btn-primary" type="button" value="Subtrair" name="btn-sub" id="btn-sub">
+                    </div>
+
+                    <div class="form-group">
+                        <input type="button" onclick="op(3)" class="btn btn-primary" value="Multiplicar" name="btn-mult" id="btn-multi">
+                        <input type="button" onclick="op(4)" value="Dividir" class="btn btn-primary" name="btn-div" id="btn-div">
+                    </div>
+                    <div class="row linha2">
+
+                    </div>
+                </form>
+            </div>
+
+            <!-- Div onde aparece os resultados -->
+            <div id="res" class="col-sm-6 col-sm-offset-3">
+                <div class="row linha3">
+                    <p>O resultado vai aparecer aqui!</p>
+                </div>
+            </div>
+
+            <!--Botão de Zerar-->
+            <div class="col-sm-6 col-sm-offset-3">
+                <div class="row linha4">
+                    <input type="button" value="Zerar" class="btn btn-secondary" onclick="op(0)">
+                </div>
+            </div>
+        </div>
+        <footer>
+            <a href="https://github.com/Bruno-Costa-fig"><h3>by @brunocosta.fig</h3></a>
+        </footer>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="_js/script.js"></script>
+    </body>
+</html>
